@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     {% block head %}
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}" />
     <title>{% block title %}{% endblock %} - Ticketing tool</title>
     {% endblock %}
 </head>
@@ -10,7 +10,7 @@
     <div id="content">{% block content %}{% endblock %}</div>
     <div id="footer">
         {% block footer %}
-        &copy; Copyright 2008 by <a href="http://domain.invalid/">you</a>.
+        &copy; Copyright 2020 by <a href="http://domain.invalid/">Data University</a>.
         {% endblock %}
     </div>
 </body>

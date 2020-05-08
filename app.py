@@ -4,8 +4,7 @@ app = Flask(__name__)
 
 @app.route('/')
 def home():
-    name = 'Martin'
-    return render_template('home.html', name=name)
+    return render_template('home.html')
 
 @app.route('/login')
 def login():
